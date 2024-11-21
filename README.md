@@ -40,31 +40,9 @@ The `inline-dumper` script is a Go program designed to dump MySQL database table
 
 ## Example
 
-```sh
-# Inline DB dumper
-Enter database host (default: 127.0.0.1): 
-Enter database user (default: root): 
-Enter database password (default: root): 
-Enter database port (default: 3306): 
-Enter database name (default: db): 
-Enable gzip compression for SQL dump files? (y/n): y
-Generate checksums file with MD5 checksum of each file dumped? (y/n): y
-Do you want to provide extra configuration for mysqldump? (y/n): y
-# Extra mysqldump options
- - Disable column statistics in mysqldump? (y/n): y
- - Skip locking tables during dump? (y/n): y
- - Dump only table structure without data? (y/n): n
-List file db.list already exists. Do you want to use it? (y/n): n
-# Tables: 
-table1, table2, table3
-# Total tables: 3
-Do you want to proceed with the dump process based on the selected list? (y/n): y
- - table1
- - table2
- - table3
-# Dump process completed.
-# Dump execution time: 1m23s
-```
+<p align="center" >
+<img src="docs/inline-dumper.svg" />
+</p> 
 
 ## Configuration Options
 
